@@ -10,6 +10,9 @@ class Play extends Phaser.Scene {
         // add new Hero to scene (scene, x, y, key, frame, direction)
         this.hero = new Hero(this, 200, 150, 'hero', 0, 'down')
 
+        // Test animations
+        // this.hero.anims.play('circular-attack')
+
         // setup keyboard input
         this.keys = this.input.keyboard.createCursorKeys()
         this.keys.HKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.H)
